@@ -57,8 +57,10 @@ section{padding:110px 0}
 
 /* Hero */
 .hero{padding:70px 0 90px;position:relative}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
-.hero h1{font-family:var(--serif);font-size:clamp(42px,6.2vw,82px);line-height:1.04;margin:22px 0 26px;letter-spacing:-.02em}
+.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:center}
+.hero h1{font-family:var(--serif);font-size:clamp(40px,5vw,66px);line-height:1.04;margin:22px 0 26px;letter-spacing:-.02em}
+.hero h1 .nw{white-space:nowrap}
+@media (max-width:620px){.hero h1 .nw{white-space:normal}}
 .hero h1 em{font-style:italic;font-weight:500}
 .hero .lead{margin-bottom:36px}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px}
@@ -241,3 +243,13 @@ section{padding:110px 0}
   .tool-banner{padding:24px}
   .stat b{font-size:24px}
 }
+
+/* Wordmark (header/footer) */
+.brand{gap:14px;align-items:center}
+.wm{font-family:"Roboto Slab",Georgia,serif;font-weight:900;font-size:26px;letter-spacing:-.015em;line-height:1;color:var(--ink);white-space:nowrap}
+.wm-tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:700;font-size:15px;letter-spacing:.04em;color:#6b6b6b;white-space:nowrap}
+.wm-tag::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.header{border-bottom:3px solid var(--ink)!important}
+.footer .wm{color:#fff}
+.footer .wm-tag{color:#9a9a9a}
+@media (max-width:620px){.wm{font-size:22px}.wm-tag{font-size:13px}}

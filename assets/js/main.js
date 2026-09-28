@@ -23,3 +23,13 @@
   } else { els.forEach(function(el){ el.classList.add('in'); }); }
   var y=document.getElementById('y'); if(y) y.textContent=new Date().getFullYear();
 })();
+(function(){
+  var box=document.getElementById('booking'); if(!box) return;
+  var url=(box.getAttribute('data-url')||'').trim(); if(!url) return;
+  box.classList.add('has-url');
+  var f=document.createElement('iframe');
+  f.src=url+(url.indexOf('?')>-1?'&':'?')+'gv=true';
+  f.title='Đặt lịch tư vấn với Vũ Huy Bảo'; f.loading='lazy';
+  box.querySelector('.booking-frame').appendChild(f);
+  document.querySelectorAll('.js-book').forEach(function(a){ a.href=url; a.textContent='Mở trang đặt lịch'; });
+})();

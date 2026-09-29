@@ -319,3 +319,4 @@ section{padding:110px 0}
 .footer .wm-b .wb-bg{fill:#fff}
 .footer .wm-b .wb-fg{stroke:#0a0a0a}
 .footer .wm-b .wb-dot{fill:#0a0a0a}
+.timeline p a{border-bottom:1px solid currentColor}

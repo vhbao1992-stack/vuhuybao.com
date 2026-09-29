@@ -28,8 +28,8 @@
   var url=(box.getAttribute('data-url')||'').trim(); if(!url) return;
   box.classList.add('has-url');
   var f=document.createElement('iframe');
-  f.src=url+(url.indexOf('?')>-1?'&':'?')+'gv=true';
+  f.src=/calendar\.google\.com/.test(url)&&url.indexOf('gv=true')<0?url+(url.indexOf('?')>-1?'&':'?')+'gv=true':url;
   f.title='Đặt lịch tư vấn với Vũ Huy Bảo'; f.loading='lazy';
   box.querySelector('.booking-frame').appendChild(f);
-  document.querySelectorAll('.js-book').forEach(function(a){ a.href=url; a.textContent='Mở trang đặt lịch'; });
+  document.querySelectorAll('.js-book').forEach(function(a){ a.href=url; a.textContent='Mở trang đặt lịch trong tab mới'; a.target='_blank'; });
 })();

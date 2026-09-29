@@ -309,3 +309,13 @@ section{padding:110px 0}
 .epigraph blockquote{font-family:var(--serif);font-style:italic;font-size:clamp(17px,1.5vw,20px);line-height:1.5;color:var(--ink-2)}
 .epigraph figcaption{margin-top:8px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--muted)}
 .epigraph figcaption::before{content:"— "}
+
+/* B mark inside wordmark */
+.wm{display:inline-flex;align-items:baseline}
+.wm-b{width:.98em;height:.98em;margin:0 .04em 0 .28em;align-self:center;transform:translateY(.02em);flex:none}
+.wm-b .wb-bg{fill:#0a0a0a}
+.wm-b .wb-fg{stroke:#fff}
+.wm-b .wb-dot{fill:#fff}
+.footer .wm-b .wb-bg{fill:#fff}
+.footer .wm-b .wb-fg{stroke:#0a0a0a}
+.footer .wm-b .wb-dot{fill:#0a0a0a}

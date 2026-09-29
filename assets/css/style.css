@@ -320,3 +320,13 @@ section{padding:110px 0}
 .footer .wm-b .wb-fg{stroke:#0a0a0a}
 .footer .wm-b .wb-dot{fill:#0a0a0a}
 .timeline p a{border-bottom:1px solid currentColor}
+/* 5 stats */
+.stats{grid-template-columns:repeat(5,1fr)}
+.stat b{font-size:clamp(26px,2.6vw,36px)}
+.stat span{font-size:13.5px;line-height:1.5;display:block;margin-top:4px}
+@media (max-width:900px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(odd){border-left:0;padding-left:0}
+  .stat:nth-child(even){border-left:1px solid var(--line);padding-left:22px}
+  .stat:last-child{grid-column:1/-1}
+}

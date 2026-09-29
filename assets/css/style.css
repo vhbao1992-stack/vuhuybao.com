@@ -303,3 +303,9 @@ section{padding:110px 0}
 .pc-go svg{width:16px;height:16px}
 @media (max-width:900px){.press-grid{grid-template-columns:1fr}.press-strip{border-radius:18px}.ps-go{margin-left:0}}
 @media (max-width:620px){.press-card{padding:24px 22px}.pc-outlet{font-size:20px}}
+
+/* Epigraph */
+.epigraph{margin:0 0 34px;padding:4px 0 4px 20px;border-left:3px solid var(--ink);max-width:560px}
+.epigraph blockquote{font-family:var(--serif);font-style:italic;font-size:clamp(17px,1.5vw,20px);line-height:1.5;color:var(--ink-2)}
+.epigraph figcaption{margin-top:8px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.epigraph figcaption::before{content:"— "}
